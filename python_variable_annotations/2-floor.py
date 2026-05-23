@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-This module provides a type-annotated function for string concatenation.
+This module provides a type-annotated function to calculate the floor of a float.
 """
 import math
 
-def floor(n: float) -> float:
+
+def floor(n: float) -> int:
     """
-    Takes two strings and returns them concatenated together.
+    Takes a float n and returns its floor as an integer.
     """
     return math.floor(n)
