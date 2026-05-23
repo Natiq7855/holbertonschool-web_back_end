@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""sdf"""
+"""This module provides a basic type-annotated function for addition."""
 
 
 def add(a: float, b: float) -> float:
-    """dsfd"""
+    """Takes two floats and returns their sum as a float."""
 
     return a + b
