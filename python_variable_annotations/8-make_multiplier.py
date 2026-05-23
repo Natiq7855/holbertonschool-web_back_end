@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-This module provides a type-annotated function that returns 
+This module provides a type-annotated function that returns
 """
 from typing import Callable
 
