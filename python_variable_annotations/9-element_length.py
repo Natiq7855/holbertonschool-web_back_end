@@ -5,6 +5,7 @@ of elements within an iterable.
 """
 from typing import Iterable, List, Tuple, Sequence
 
+
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
     """
     Takes an iterable of sequences and returns a list of tuples containing
