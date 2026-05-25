@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
+"""Module for asynchronous random delay."""
+
 import asyncio
 import random
-"""sdfj askganfg kfg"""
 
 
 async def wait_random(max_delay: int = 10) -> float:
-    """sdkjdfgjdfl fgjdlfndfalnlj asdff"""
-
+    """Wait for a random delay and return it."""
     delay = random.uniform(0, max_delay)
-
     await asyncio.sleep(delay)
     return delay
