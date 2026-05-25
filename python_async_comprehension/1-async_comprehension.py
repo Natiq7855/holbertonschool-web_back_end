@@ -3,8 +3,8 @@
 
 from typing import List
 
-# Import async_generator from the previous file
-async_generator = __import__('5-async_generator').async_generator
+# Change the import from '5-async_generator' to '0-async_generator'
+async_generator = __import__('0-async_generator').async_generator
 
 
 async def async_comprehension() -> List[float]:
@@ -12,5 +12,4 @@ async def async_comprehension() -> List[float]:
 
     over async_generator, then return the 10 random numbers.
     """
-    # An asynchronous list comprehension collects yielded values on the fly
     return [number async for number in async_generator()]
