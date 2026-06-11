@@ -12,11 +12,11 @@ def index_range(page, page_size) -> tuple[int, int]:
     end_page = start_page + page_size
     return (start_page, end_page)
 
+
 class Server:
     """Server class to paginate a database of popular baby names.
     """
     DATA_FILE = "Popular_Baby_Names.csv"
-
 
     def __init__(self):
         self.__dataset = None
