@@ -48,18 +48,11 @@ class Server:
         """
         Return a dictionary containing hypermedia pagination metadata.
         """
-        # 1. Reuse get_page to fetch the actual data slice (also handles validation asserts)
         page_data = self.get_page(page, page_size)
-        
-        # 2. Total dataset size and overall pages calculation
         total_items = len(self.dataset())
         total_pages = math.ceil(total_items / page_size)
-        
-        # 3. Determine next and previous pages safely
         next_page = page + 1 if page < total_pages else None
         prev_page = page - 1 if page > 1 else None
-
-        # 4. Construct and return the dictionary payload
         return {
             "page_size": len(page_data),
             "page": page,
