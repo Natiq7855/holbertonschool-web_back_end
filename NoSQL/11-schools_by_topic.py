@@ -19,3 +19,9 @@ def schools_by_topic(mongo_collection, topic):
     """
     result = mongo_collection.find({"topics": topic})
     return list(result)
+
+if __name__ == "__main__":
+    # Example usage:
+    # collection = client.my_db.school
+    # print(schools_by_topic(collection, "Python"))
+    pass
