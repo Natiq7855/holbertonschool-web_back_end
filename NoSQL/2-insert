@@ -1,2 +1,2 @@
-// sakdsajd sada as
-printjson(db.school.insertOne({ "name": "Holberton School" }))
+// Inserts a document in the collection school
+db.school.insert({"name": "Holberton school"})
