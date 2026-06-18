@@ -1,2 +1,2 @@
 // sakdsajd sada as
-db.school.insertOne({ "name": "Holberton School"})
+printjson(db.school.insertOne({ "name": "Holberton School" }))
