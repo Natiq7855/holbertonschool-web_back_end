@@ -1,2 +1,2 @@
-//a script that adds a new attribute to a document in the collection school
-db.school.updateMany({"name" : "Holberton school" }, {$set: {"address": "972 Mission street" }}, {multi: "true"} )
+// Adds address="972 Mission street" to all documents with name="Holberton school"
+printjson(db.school.update({"name": "Holberton school"}, {$set: {"address": "972 Mission street"}}, {multi: true}))
