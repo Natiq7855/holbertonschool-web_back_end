@@ -1,7 +1,15 @@
-function taskfirst() {
-  const a = 1;
+export function taskFirst() {
+  const task = 'I prefer const when I can.';
+  return task;
 }
 
-function taskNext() {
-  let a = 2;
+export function getLast() {
+  return ' is okay';
+}
+
+export function taskNext() {
+  let combination = 'But sometimes let';
+  combination += getLast();
+
+  return combination;
 }
