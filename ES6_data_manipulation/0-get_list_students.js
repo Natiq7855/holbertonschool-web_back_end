@@ -3,7 +3,7 @@
  * 
  * @returns {Array<{id: number, firstName: string, location: string}>}
  */
-function getListStudents() {
+export default function getListStudents() {
   return [
     {
       id: 1,
